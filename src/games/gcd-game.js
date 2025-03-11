@@ -1,4 +1,4 @@
-import {gameLogic} from '../index.js';
+import gameLogic from '../index.js';
 
 const question = 'Find the greatest common divisor of given numbers.';
 const gcd = (firstNum, secondNum) => {
@@ -21,4 +21,4 @@ const initGcdGame = () => {
   gameLogic(question, conditions);
 };
 
-export {initGcdGame};
+export default initGcdGame;

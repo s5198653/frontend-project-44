@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import {cli} from './cli.js';
+import cli from './cli.js';
 
 const userName = cli();
 const quantityOfQuestions = 3;
@@ -14,11 +14,11 @@ const gameLogic = (question, conditions) => {
       console.log('Correct!');
     } else {
       return console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}!`
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}!`,
       );
     }
   }
   return console.log(`Congratulations, ${userName}!`);
 };
 
-export {gameLogic};
+export default gameLogic;

@@ -1,4 +1,4 @@
-import {gameLogic} from '../index.js';
+import gameLogic from '../index.js';
 
 const question = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -32,4 +32,4 @@ const initCalcGame = () => {
   gameLogic(question, conditions);
 };
 
-export {initCalcGame};
+export default initCalcGame;

@@ -1,4 +1,4 @@
-import {gameLogic} from '../index.js';
+import gameLogic from '../index.js';
 
 const isEven = (num) => num % 2 === 0;
 const question = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -14,4 +14,4 @@ const initEvenGame = () => {
   gameLogic(question, conditions);
 };
 
-export {initEvenGame};
+export default initEvenGame;

@@ -1,12 +1,11 @@
-import {gameLogic} from '../index.js';
+import gameLogic from '../index.js';
 
-const question =
-  'Answer "yes" if given number is prime. Otherwise answer "no".';
+const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const isPrime = (num) => {
   if (num <= 1) {
     return false;
   }
-  for (let i = 2; i <= Math.sqrt(num); i++) {
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -25,4 +24,4 @@ const initPrimeGame = () => {
   gameLogic(question, conditions);
 };
 
-export {initPrimeGame};
+export default initPrimeGame;

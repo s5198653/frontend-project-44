@@ -1,4 +1,4 @@
-import {gameLogic} from '../index.js';
+import gameLogic from '../index.js';
 
 const question = 'What number is missing in the progression?';
 const generateArithmeticProgression = () => {
@@ -7,7 +7,7 @@ const generateArithmeticProgression = () => {
   const commonDifference = Math.floor(Math.random() * 10) + 1;
 
   const progression = [];
-  for (let i = 0; i < progressionLength; i++) {
+  for (let i = 0; i < progressionLength; i += 1) {
     progression.push(firstTerm + i * commonDifference);
   }
 
@@ -32,4 +32,4 @@ const initProgressionGame = () => {
   gameLogic(question, conditions);
 };
 
-export {initProgressionGame};
+export default initProgressionGame;
